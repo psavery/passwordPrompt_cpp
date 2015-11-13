@@ -1,5 +1,6 @@
 // Written by Patrick S. Avery -- 2015
 // Hides the console input while the user inputs the password
+// Returns the password
 
 #include <iostream>
 #include <string>
@@ -33,6 +34,7 @@ std::string PasswordPrompt::getPassword()
   std::string s;
   std::cout << "Enter password:";
   getline(std::cin, s);
+  std::cout << std::endl;
 
 // Cleanup
 #ifdef _WIN32
